@@ -30,6 +30,8 @@ public class GitHub_act extends AppCompatActivity {
         listaLibros.add(libro.getFarenheit());
         listaLibros.add(libro.getRevival());
         listaLibros.add(libro.getAlquimista());
+        listaLibros.add(libro.getPoder());
+        listaLibros.add(libro.getDespertar());
 
         ArrayAdapter<String> adaptLibros = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listaLibros);
 
@@ -52,6 +54,15 @@ public class GitHub_act extends AppCompatActivity {
         if(spin.getSelectedItem().equals(libro.getAlquimista()))
         {
             texto.setText("El valor de El Alquimista es: "+ libro.getPreElAlquimista());
+        }
+
+        if(spin.getSelectedItem().equals(libro.getPoder()))
+        {
+            texto.setText("El valor de El Poder es: "+libro.getPrePoder());
+        }
+        if(spin.getSelectedItem().equals(libro.getDespertar()))
+        {
+            texto.setText("El valor de Despertar es: "+libro.getPreDespertar());
         }
 
     }

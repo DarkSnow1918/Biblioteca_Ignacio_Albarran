@@ -1,18 +1,23 @@
 package Clases;
 
 public class Libros {
-    private String PreFarenheit, PreRevival, PreElAlquimista, farenheit, revival, alquimista;
+    private String PreFarenheit, PreRevival, PreElAlquimista, PrePoder, PreDespertar,
+            farenheit, revival, alquimista, poder, despertar;
 
 
 
     public Libros()
     {
-        PreFarenheit = "5000";
-        PreRevival = "12000";
+        PreFarenheit = "7000";
+        PreRevival = "22000";
         PreElAlquimista = "45000";
+        PrePoder="88000";
+        PreDespertar="156000";
         farenheit = "Farenheit";
         revival="Revival";
         alquimista="El Alquimista";
+        poder="El Poder";
+        despertar="Despertar";
     }
 
     public String getPreFarenheit() {
@@ -61,5 +66,37 @@ public class Libros {
 
     public void setAlquimista(String alquimista) {
         this.alquimista = alquimista;
+    }
+
+    public String getPrePoder() {
+        return PrePoder;
+    }
+
+    public void setPrePoder(String prePoder) {
+        PrePoder = prePoder;
+    }
+
+    public String getPreDespertar() {
+        return PreDespertar;
+    }
+
+    public void setPreDespertar(String preDespertar) {
+        PreDespertar = preDespertar;
+    }
+
+    public String getPoder() {
+        return poder;
+    }
+
+    public void setPoder(String poder) {
+        this.poder = poder;
+    }
+
+    public String getDespertar() {
+        return despertar;
+    }
+
+    public void setDespertar(String despertar) {
+        this.despertar = despertar;
     }
 }
